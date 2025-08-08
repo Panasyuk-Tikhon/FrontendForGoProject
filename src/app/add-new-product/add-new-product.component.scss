@@ -1,0 +1,36 @@
+input{
+    font-size:25px;
+}
+.saveButton{
+    width: 80%; 
+    height: 75px; 
+    font-size:40px; 
+    background-color: lightgray;
+}
+div{
+    padding-left: 15px;
+}
+.mainDiv{
+    justify-content: space-around; 
+    display: block;
+}
+.SaveElement{
+    margin-top: 40px;
+}
+.Description{
+    resize: none; 
+    vertical-align: top; 
+    text-align: left; 
+    font-size:25px; 
+    width: 70%; 
+    height: 200px;
+}
+.backButton{
+    width: 100px;
+    height: 40px;
+    border: solid;
+    border-color: gray;
+    background-color: lightgrey;
+    text-decoration: none;
+    color: black;
+}

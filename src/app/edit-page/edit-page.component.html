@@ -1,0 +1,33 @@
+<div>
+    <a type="button" style="text-decoration: none;" type="button" href="">
+        <div class="backButton">
+            Back
+        </div>
+    </a>
+</div>
+<div class="mainDiv">
+   <form [formGroup]="newProductForm">
+        <div>
+            <H1>Name</H1>
+            <input formControlName="Name" type="text" value="{{item?.Name}}">
+        </div>
+        <div >
+            <H1>Stock Quantity</H1>
+            <input formControlName="StockQuantity" type="number" value="{{item?.StockQuantity}}">
+        </div>
+        <div>
+            <H1>Price</H1>
+            <input formControlName="Price" type="number" value="{{item?.Price}}">
+        </div>
+                
+        <div>
+            <H1>Description</H1>
+            <textarea formControlName="Description" class="Description" value="{{item?.Description}}"></textarea>
+        </div>
+    </form>
+</div>
+<div class="SaveElement">
+    <button (click)="saveChanges()" (mouseout)="changeTextBack()" class="saveButton">
+        {{saveButtonText}}
+    </button>
+</div>
